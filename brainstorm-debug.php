@@ -153,7 +153,7 @@ class BrainstormForce_Debug {
 	function process( $status = '' ) {
 
 		$total_memory              = ini_get('memory_limit'); 		//	Total Memory
-		$available_memory          = memory_get_peak_usage(true);	//	Available Memory
+		$available_memory          = memory_get_peak_usage(true);	//	Used Memory
 		$initial_required_required = 14999999; 						//	Initial required Memory
 
 		if( preg_match('/^(\d+)(.)$/', $total_memory, $matches ) ) {
@@ -182,7 +182,7 @@ class BrainstormForce_Debug {
 								echo 'Hook: ' . current_action() . ' <br/>';
 								echo '________________________________________<br/>';
 								echo 'Total: ' . $__total_memory . ' MB <br/>';
-								echo 'Available: ' . $__available_memory . ' MB <br/>';
+								echo 'Used: ' . $__available_memory . ' MB <br/>';
 								echo '________________________________________<br/>';
 								echo 'Remaining: ' . ( $__total_memory - $__available_memory ) . ' MB ';
 
