@@ -135,7 +135,7 @@ class BrainstormForce_Debug {
 		wp_enqueue_style( 'dashicons' );
 		wp_enqueue_script( 'bsf-debug-react.js' , plugin_dir_url( __FILE__ ) . 'build/react.js', null, null, true );
 		wp_enqueue_script( 'bsf-debug-react-dom' , plugin_dir_url( __FILE__ ) . 'build/react-dom.js', null, null, true );
-		wp_enqueue_script( 'bsf-debug-browser.min' , 'https://npmcdn.com/babel-core@5.8.38/browser.min.js', null, null, true );
+		wp_enqueue_script( 'bsf-debug-browser.min' , 'https://unpkg.com/babel-core@5.8.38/browser.min.js', null, null, true );
 		// wp_enqueue_script( 'bsf-debug' , plugin_dir_url( __FILE__ ) . 'build/brainstorm-debug.js', null, null, true );
 		// wp_register_script( 'bsf-debug-browser.min' , plugin_dir_url( __FILE__ ) . 'build/browser.min.js', null, null, true );
 	}
